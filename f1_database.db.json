@@ -1,0 +1,491 @@
+{
+  "db_id": "f1_database.db",
+  "schema": null,
+  "tables": {
+    "main.Circuito": {
+      "fields": {
+        "id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "adelaide",
+            "ain-diab",
+            "aintree",
+            "albert_park",
+            "americas"
+          ]
+        },
+        "nombre": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Silverstone Circuit",
+            "Circuit de Monaco",
+            "Indianapolis Motor Speedway",
+            "Circuit Bremgarten",
+            "Circuit de Spa-Francorchamps"
+          ]
+        },
+        "ciudad": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Silverstone",
+            "Monte-Carlo",
+            "Indianapolis",
+            "Bern",
+            "Spa"
+          ]
+        },
+        "pais": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "UK",
+            "Monaco",
+            "USA",
+            "Switzerland",
+            "Belgium"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "main.Escuderia": {
+      "fields": {
+        "id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "adams",
+            "afm",
+            "alfa",
+            "alphatauri",
+            "alpine"
+          ]
+        },
+        "nombre": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Alfa Romeo",
+            "Talbot-Lago",
+            "ERA",
+            "Maserati",
+            "Alta"
+          ]
+        },
+        "nacionalidad": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Swiss",
+            "French",
+            "British",
+            "Italian",
+            "American"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "main.GP": {
+      "fields": {
+        "id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1950_Belgian Grand Prix",
+            "1950_British Grand Prix",
+            "1950_French Grand Prix",
+            "1950_Indianapolis 500",
+            "1950_Italian Grand Prix"
+          ]
+        },
+        "año": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1950",
+            "1951",
+            "1952",
+            "1953",
+            "1954"
+          ]
+        },
+        "dia": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "13",
+            "21",
+            "30",
+            "4",
+            "18"
+          ]
+        },
+        "mes": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "5",
+            "6",
+            "7",
+            "9",
+            "10"
+          ]
+        },
+        "hora": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "0",
+            "14",
+            "15",
+            "13",
+            "12"
+          ]
+        },
+        "circuito": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "silverstone",
+            "monaco",
+            "indianapolis",
+            "bremgarten",
+            "spa"
+          ]
+        },
+        "granpremio": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "British Grand Prix",
+            "Monaco Grand Prix",
+            "Indianapolis 500",
+            "Swiss Grand Prix",
+            "Belgian Grand Prix"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "main.Piloto": {
+      "fields": {
+        "id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cannoc",
+            "abate",
+            "abecassis",
+            "acheson",
+            "adamich"
+          ]
+        },
+        "nombre": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Nino",
+            "Luigi",
+            "Reg",
+            "Yves",
+            "Louis"
+          ]
+        },
+        "apellido": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Farina",
+            "Fagioli",
+            "Parnell",
+            "Cabantous",
+            "Rosier"
+          ]
+        },
+        "fecha_nacimiento": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1906-10-30",
+            "1898-06-09",
+            "1911-07-02",
+            "1904-10-08",
+            "1905-11-05"
+          ]
+        },
+        "nacionalidad": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Italian",
+            "British",
+            "French",
+            "Belgian",
+            "Argentine"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "main.PilotoEscuderia": {
+      "fields": {
+        "piloto_id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cannoc",
+            "abate",
+            "abecassis",
+            "acheson",
+            "adamich"
+          ]
+        },
+        "escuderia_id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "alfa",
+            "lago",
+            "era",
+            "maserati",
+            "alta"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    },
+    "main.ResultadoGP": {
+      "fields": {
+        "gp_id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1950_Belgian Grand Prix",
+            "1950_British Grand Prix",
+            "1950_French Grand Prix",
+            "1950_Indianapolis 500",
+            "1950_Italian Grand Prix"
+          ]
+        },
+        "piloto_id": {
+          "type": "TEXT",
+          "primary_key": true,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "Cannoc",
+            "abate",
+            "abecassis",
+            "acheson",
+            "adamich"
+          ]
+        },
+        "escuderia_id": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "alfa",
+            "lago",
+            "era",
+            "maserati",
+            "alta"
+          ]
+        },
+        "posicion": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        "parrilla": {
+          "type": "INTEGER",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "1",
+            "2",
+            "4",
+            "6",
+            "9"
+          ]
+        },
+        "tiempo": {
+          "type": "TEXT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "2:13:23.600",
+            "+2.600",
+            "+52.000",
+            "3:13:18.700"
+          ]
+        },
+        "puntos": {
+          "type": "FLOAT",
+          "primary_key": false,
+          "nullable": true,
+          "default": null,
+          "autoincrement": false,
+          "comment": "",
+          "examples": [
+            "9.0",
+            "6.0",
+            "4.0",
+            "3.0",
+            "2.0"
+          ]
+        }
+      },
+      "examples": [],
+      "comment": ""
+    }
+  },
+  "foreign_keys": [
+    [
+      "main.PilotoEscuderia",
+      "piloto_id",
+      "main",
+      "Piloto",
+      "id"
+    ],
+    [
+      "main.PilotoEscuderia",
+      "escuderia_id",
+      "main",
+      "Escuderia",
+      "id"
+    ],
+    [
+      "main.ResultadoGP",
+      "gp_id",
+      "main",
+      "GP",
+      "id"
+    ],
+    [
+      "main.ResultadoGP",
+      "piloto_id",
+      "main",
+      "Piloto",
+      "id"
+    ]
+  ]
+}
