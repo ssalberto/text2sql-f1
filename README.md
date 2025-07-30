@@ -12,5 +12,5 @@ Diagram explaining the main functionality of the system.
 A human asking "¿Who won the Spanish GP in 2013?". The system will translate the question into a valid SQL query and will extract the real data directly from the database.
 
 
-The web integration with streamlit looks as foolows:
+The web integration with streamlit looks as folows:
 ![image](https://github.com/user-attachments/assets/98e95ae9-ebab-4101-a19a-9d5872ccb1af)
